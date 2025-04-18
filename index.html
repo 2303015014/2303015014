@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2303015014</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a onclick="showSection('home')">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Pertemuan ▾</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p1')">Pertemuan 1</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p2')">Pertemuan 2</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p3')">Pertemuan 3</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p4')">Pertemuan 4</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p5')">Pertemuan 5</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p6')">Pertemuan 6</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p7')">Pertemuan 7</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p8')">Pertemuan 8</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p9')">Pertemuan 9</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p10')">Pertemuan 10</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p11')">Pertemuan 11</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p12')">Pertemuan 12</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p13')">Pertemuan 13</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p14')">Pertemuan 14</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p15')">Pertemuan 15</a>
+        <a href="#" onclick="showSection('pertemuan'); toggleAccordion('p16')">Pertemuan 16</a>
+          </div>
+        </div>
+        <a onclick="showSection('uts')">UTS</a>
+        <a onclick="showSection('uas')">UAS</a>
+      </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- HOME -->
+    <div id="home" class="section active">
+      <div class="home-card">
+        <h2>🌟 Selamat Datang di Praktikum Pemogramman Web! 🌟</h2>
+        <p><strong>Nama:</strong> Ninda Baitza Maulana</p>
+        <p><strong>NIM:</strong> 2303015014</p>
+        <p><strong>Program Studi:</strong> Teknik Informatika - Kelas 4B</p>
+        <p><strong>Mata Kuliah:</strong> Praktikum Pemrograman Web</p>
+        <p><strong>Dosen Pengampu:</strong> Nur Chalik Azhar, S.Kom., M.Kom.</p>
+        <p>✦ •┈๑⋅⋯ ⋆˚✿˖°  ❀ ─────୨ৎ───── ❀  ⋆˚✿˖° ⋯⋅๑┈• ✦</p>
+      </div>
+    </div>
+
+    <!-- PERTEMUAN -->
+    <div id="pertemuan" class="section">
+      <h2>Pertemuan</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p1')">Pertemuan 1</button>
+          <div id="p1" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p2')">Pertemuan 2</button>
+          <div id="p2" class="accordion-content">
+            <ul>
+              <li><a href="pertemuan2/latihan1.html">Latihan 1 [13 Maret 2025]</a></li>
+              <p>Instruksi tugas:
+                1. Buat 1 page home yang dimana terdapat konten profil Anda. Isi profilnya adalah nama, nim, foto.
+                
+                2. Konten profil yang telah Anda buat dapat dibuat menjadi tabel, dimana jumlah minimal row adalah 2.</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p3')">Pertemuan 3</button>
+          <div id="p3" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p4')">Pertemuan 4</button>
+          <div id="p4" class="accordion-content">
+            <ul>
+              <li><a href="pertemuan4/latihan1.html">Latihan 1</a></li>
+              <p>Latihan 1 = buat form input login (PPT pertama di slide 27) </p>
+            </ul>
+
+            <ul>
+              <li><a href="pertemuan4/latihan2.html">Latihan 2</a></li>
+              <p>Latihan 2 = buat form input contact (PPT pertama di slide 27)               </p>
+            </ul>
+
+            <ul>
+              <li><a href="pertemuan4/latihan3.html">Latihan 3</a></li>
+              <p>Latihan 3 = buat form input registrasi (PPT pertama di slide 28)  </p>
+            </ul>
+
+            <ul>
+              <li><a href="pertemuan4/latihan4.html">Latihan 4</a></li>
+              <p>Latihan 4 = buat a fancy table (PPT kedua di slide 28)  </p>
+            </ul>
+
+            <ul>
+              <li><a href="pertemuan4/latihan5.html">Latihan 5</a></li>
+              <p>Latihan 5 = buat sebuah table yang terdiri dari NIM, nama lengkap, nama universitas, nama fakultas, nama jurusan, dan foto  </p>
+            </ul>
+
+
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p5')">Pertemuan 5</button>
+          <div id="p5" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p6')">Pertemuan 6</button>
+          <div id="p6" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p7')">Pertemuan 7</button>
+          <div id="p7" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p8')">Pertemuan 8</button>
+          <div id="p8" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p9')">Pertemuan 9</button>
+          <div id="p9" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p10')">Pertemuan 10</button>
+          <div id="p10" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p11')">Pertemuan 11</button>
+          <div id="p11" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p12')">Pertemuan 12</button>
+          <div id="p12" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p13')">Pertemuan 13</button>
+          <div id="p13" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p14')">Pertemuan 14</button>
+          <div id="p14" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p15')">Pertemuan 15</button>
+          <div id="p15" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle" onclick="toggleAccordion('p16')">Pertemuan 16</button>
+          <div id="p16" class="accordion-content">
+            <ul><li><a>Tidak ada Latihan</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UTS -->
+    <div id="uts" class="section">
+      <div class="exam-card">
+        <h2>📚 Ujian Tengah Semester (UTS)</h2>
+        <p>Silakan unggah tugas UTS kamu melalui forum ini sesuai instruksi dosen.</p>
+      </div>
+    </div>
+
+    <!-- UAS -->
+    <div id="uas" class="section">
+      <div class="exam-card">
+        <h2>📝 Ujian Akhir Semester (UAS)</h2>
+        <p>Forum ini digunakan untuk mengumpulkan tugas akhir semester. Jangan sampai telat, ya!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle('show');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.substring(1); // Ambil bagian setelah #
+  if (hash) {
+    showSection(hash); // Tampilkan section berdasarkan id hash
+  }
+});
+
+  </script>
+
+</body>
+</html>
