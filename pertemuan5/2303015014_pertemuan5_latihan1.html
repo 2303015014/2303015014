@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PERTEMUAN 5 - Latihan 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #0077aa;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .latihan-box {
+      text-align: left;
+      background-color: #f4faff;
+      border-left: 5px solid #0077aa;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #0077aa;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #005f88;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+      <a href="../index.html#pertemuan" class="back-btn">← Kembali ke Halaman Pertemuan</a>
+
+    <h1>👩‍💻 PERTEMUAN 5 - Latihan 1</h1>
+    <p class="description"></p>
+
+    <div class="latihan-box">
+      <!-- ISI LATIHAN DI SINI -->
+      <!-- Slide 9 -->
+      <h2> [SLIDE 09] </h2>
+      <html>
+          <head>
+              <title>Ini adalah judul website.</title>
+          </head>
+          <body>
+              <button onclick="test()">Munculkan Alert</button>
+              <script>
+                  function test() {
+                    alert("Hello Word");
+                  }
+              </script>
+          </body>
+      </html>
+        
+      <!-- Slide 10 -->
+      <h2> [SLIDE 10] </h2>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Document</title>
+          <script>
+              function test() {
+                  alert("Hello World");
+              }
+          </script>
+      </head>
+      <body>
+          <button onclick="test()">Munculkan Alert</button>
+      </body>
+      </html>
+
+      <!-- Slide 11 -->
+      <h2> [SLIDE 11] </h2>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Document</title>
+          <script> src="test3.js"</script>
+      </head>
+      <body>
+          <button onclick="test()">Munculkan Alert</button>
+      </body>
+      </html>
+
+      <!-- Slide 14 -->
+      <h2> [SLIDE 14] </h2>
+      <html>
+          <head>
+              <title>Ini adalah judul websites</title>
+          </head>
+          <body>
+              <h1 id="heading1">Hello World!</h1>
+              <button onclick="test()">Ubah Teks</button>
+              <script>
+                  function test() {
+                      var heading1 = document.getElementById ("heading1");
+                      heading1. innerHTML = "Hello Indonesia";
+                  }
+              </script>
+          </body>
+      </html>
+
+      <!-- Slide 15 -->
+      <h2> [SLIDE 15] </h2>
+      <html lang="en">
+      <head>
+        <title>Test 4</title>
+        <script>
+          function changeGoogleCom() {
+            var a = document.getElementById("myGoogle");
+            a.href = "http://google.com";
+          }
+
+          function changeGoogleCoId() {
+            var a = document.getElementById("myGoogle");
+            a.href = "http://google.co.id";
+          }
+        </script>
+      </head>
+      <body>
+        <a id="myGoogle" href="http://google.com">Go to Google</a><br><br>
+        <button onclick="changeGoogleCom()">Change to google.com</button>
+        <button onclick="changeGoogleCoId()">Change to google.co.id</button>
+      </body>
+      </html>
+
+      <!-- Slide 16 -->
+      <h2> [SLIDE 16] </h2>
+      <html lang="en">
+      <head>
+        <title>Test 5</title>
+        <script>
+          function changeReguler() {
+            var p = document.getElementById('myText');
+            p.style.fontWeight = 'normal';
+          }
+
+          function changeBold() {
+            var p = document.getElementById('myText');
+            p.style.fontWeight = 'bold';
+          }
+        </script>
+      </head>
+      <body>
+        <p id="myText" style="font-size: 20px;">Ini adalah test</p>
+        <button onclick="changeReguler()">Change Regular</button>
+        <button onclick="changeBold()">Change Bold</button>
+      </body>
+      </html>
+
+      <!-- Slide 17 -->
+      <h2> [SLIDE 17] </h2>
+      <html lang="en">
+      <head>
+        <title>Test 6</title>
+        <script>
+          function show() {
+            var p = document.getElementById('myText');
+            p.style.display = 'block';
+          }
+
+          function hide() {
+            var p = document.getElementById('myText');
+            p.style.display = 'none';
+          }
+        </script>
+      </head>
+      <body>
+        <p id="myText" style="font-size:20px;">Ini adalah test</p>
+        <button onclick="show()">Show</button>
+        <button onclick="hide()">Hide</button>
+      </body>
+      </html>
+
+      <!-- Slide 18 -->
+      <h2> [SLIDE 18] </h2>
+      <html>
+      <head>
+        <title>Ini adalah judul website</title>
+      </head>
+      <body>
+
+        <button onclick="test()">Munculkan Alert</button>
+
+        <script>
+          function test() {
+            var date = new Date();
+            alert(date);
+          }
+        </script>
+
+      </body>
+      </html>
+
+
+</body>
+</html>
