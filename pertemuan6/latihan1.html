@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PERTEMUAN 6 - Latihan 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #0077aa;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .latihan-box {
+      text-align: left;
+      background-color: #f4faff;
+      border-left: 5px solid #0077aa;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #0077aa;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #87aebf;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+      <a href="../index.html#pertemuan" class="back-btn">← Kembali ke Halaman Pertemuan</a>
+
+    <h1>👩‍💻 PERTEMUAN 6 - Latihan 1</h1>
+    <p class="description"></p>
+
+    <div class="latihan-box">
+      <!-- ISI LATIHAN DI SINI -->
+      <!DOCTYPE html>
+      <html lang="id">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Pendaftaran & Pembayaran Mahasiswa Baru</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <style>
+              body {
+                  background-color: #f8f9fa;
+                  font-family: 'Arial', sans-serif;
+              }
+              .container {
+                  margin-top: 50px;
+                  
+              }
+              .form-container {
+                  background-color: #ffffff;
+                  padding: 30px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  text-align: left;
+              }
+              .form-title {
+                  text-align: center;
+                  margin-bottom: 30px;
+                  font-size: 24px;
+                  color: #007bff;
+              }
+              .btn-custom {
+                  background-color: #007bff;
+                  color: white;
+              }
+              .btn-custom:hover {
+                  background-color: #0056b3;
+              }
+              .hidden {
+                  display: none;
+              }
+              .rekap-container {
+                  margin-top: 30px;
+              }
+              .virtual-account,
+              .qris-barcode {
+                  margin-top: 20px;
+                  text-align: center;
+              }
+              .barcode-img {
+                  width: 200px;
+                  height: 200px;
+                  margin-top: 20px;
+              }
+          </style>
+      </head>
+      <body>
+
+      <div class="container">
+          <!-- Form Pendaftaran -->
+          <div class="form-container" id="form-pendaftaran">
+              <h2 class="form-title">Form Pendaftaran Calon Mahasiswa Baru</h2>
+              <form id="form-pendaftaran-mahasiswa">
+                  <div class="mb-3">
+                      <label for="nik" class="form-label">NIK</label>
+                      <input type="text" class="form-control" id="nik" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="nama-lengkap" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="nama-lengkap" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="tgl-lahir" class="form-label">Tempat & Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="tgl-lahir" placeholder="Contoh: Jakarta, 12 Januari 2000" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="jenis-kelamin" class="form-label">Jenis Kelamin</label>
+                      <select class="form-select" id="jenis-kelamin" required>
+                          <option value="Laki-laki">Laki-laki</option>
+                          <option value="Perempuan">Perempuan</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="alamat" class="form-label">Alamat Lengkap</label>
+                      <textarea class="form-control" id="alamat" rows="3" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="nama-bapak" class="form-label">Nama Bapak</label>
+                      <input type="text" class="form-control" id="nama-bapak" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="nama-ibu" class="form-label">Nama Ibu</label>
+                      <input type="text" class="form-control" id="nama-ibu" required>
+                  </div>
+                  <button type="submit" class="btn btn-custom w-100">Simpan Pendaftaran</button>
+              </form>
+          </div>
+
+          <!-- Form Pembayaran -->
+          <div class="form-container hidden" id="form-pembayaran">
+              <h2 class="form-title">Form Pembayaran Pendaftaran</h2>
+              <form id="form-pembayaran-mahasiswa">
+                  <div class="mb-3">
+                      <label for="nik-pembayaran" class="form-label">NIK</label>
+                      <input type="text" class="form-control" id="nik-pembayaran" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="nama-lengkap-pembayaran" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="nama-lengkap-pembayaran" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="jumlah-pembayaran" class="form-label">Jumlah Pembayaran</label>
+                      <input type="number" class="form-control" id="jumlah-pembayaran" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="metode-pembayaran" class="form-label">Metode Pembayaran</label>
+                      <select class="form-select" id="metode-pembayaran" required>
+                          <option value="Cash">Cash</option>
+                          <option value="Transfer Bank BSI">Transfer Bank BSI</option>
+                          <option value="QRIS">QRIS</option>
+                      </select>
+                  </div>
+
+                  <!-- Display Virtual Account and QRIS in Pembayaran Form -->
+                  <div id="virtual-account" class="virtual-account hidden">
+                      <p><strong>Kode Virtual Account Transfer:</strong> 123456789012</p>
+                  </div>
+                  <div id="qris-barcode" class="qris-barcode hidden">
+                      <p><strong>Scan QRIS untuk Pembayaran:</strong></p>
+                      <img src="https://www.qrcode-monkey.com/img/default-preview-qr.svg" alt="QRIS Barcode" class="barcode-img">
+                  </div>
+
+                  <!-- Move the Upload File Field to the Bottom -->
+                  <div class="mb-3">
+                      <label for="bukti-pembayaran" class="form-label">Bukti Pembayaran</label>
+                      <input type="file" class="form-control" id="bukti-pembayaran" required>
+                  </div>
+
+                  <button type="submit" class="btn btn-custom w-100">Simpan Pembayaran</button>
+              </form>
+          </div>
+
+          <!-- Rekap Pembayaran -->
+          <div id="rekap-pembayaran" class="rekap-container hidden">
+              <h3 class="text-center">Rekap Pembayaran</h3>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>NIK</th>
+                          <th>Nama Lengkap</th>
+                          <th>Jumlah Pembayaran</th>
+                          <th>Metode Pembayaran</th>
+                          <th>Detail Pembayaran</th>
+                      </tr>
+                  </thead>
+                  <tbody id="rekap-table-body">
+                  </tbody>
+              </table>
+              <button id="btn-selesai" class="btn btn-custom w-100">Selesai</button>
+          </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+          // Form Pendaftaran
+          document.getElementById('form-pendaftaran-mahasiswa').addEventListener('submit', function(event) {
+              event.preventDefault();
+              
+              // Get the values from form
+              const nik = document.getElementById('nik').value;
+              const namaLengkap = document.getElementById('nama-lengkap').value;
+              
+              // Display Pembayaran form and pre-fill some fields
+              document.getElementById('form-pendaftaran').classList.add('hidden');
+              document.getElementById('form-pembayaran').classList.remove('hidden');
+              document.getElementById('nik-pembayaran').value = nik;
+              document.getElementById('nama-lengkap-pembayaran').value = namaLengkap;
+          });
+
+          // Form Pembayaran
+          document.getElementById('form-pembayaran-mahasiswa').addEventListener('submit', function(event) {
+              event.preventDefault();
+
+              // Get the values from payment form
+              const nikPembayaran = document.getElementById('nik-pembayaran').value;
+              const namaPembayaran = document.getElementById('nama-lengkap-pembayaran').value;
+              const jumlahPembayaran = document.getElementById('jumlah-pembayaran').value;
+              const metodePembayaran = document.getElementById('metode-pembayaran').value;
+
+              // Display rekap data
+              const tableBody = document.getElementById('rekap-table-body');
+              const newRow = document.createElement('tr');
+              newRow.innerHTML = 
+                  `<td>${nikPembayaran}</td>
+                  <td>${namaPembayaran}</td>
+                  <td>${jumlahPembayaran}</td>
+                  <td>${metodePembayaran}</td>
+                  <td id="pembayaran-detail"></td>`;
+              tableBody.appendChild(newRow);
+
+              // Show rekap and hide form
+              document.getElementById('rekap-pembayaran').classList.remove('hidden');
+              document.getElementById('form-pembayaran').classList.add('hidden');
+
+              // Handle Virtual Account and QRIS
+              if (metodePembayaran === 'Transfer Bank BSI') {
+                  document.getElementById('virtual-account').classList.remove('hidden');
+                  document.getElementById('qris-barcode').classList.add('hidden');
+              } else if (metodePembayaran === 'QRIS') {
+                  document.getElementById('qris-barcode').classList.remove('hidden');
+                  document.getElementById('virtual-account').classList.add('hidden');
+              } else {
+                  document.getElementById('virtual-account').classList.add('hidden');
+                  document.getElementById('qris-barcode').classList.add('hidden');
+              }
+          });
+
+          // Handle Finish Button
+          document.getElementById('btn-selesai').addEventListener('click', function() {
+              alert('Proses selesai!');
+              location.reload();  // Refresh page after finishing
+          });
+
+          // Show Virtual Account or QRIS based on payment method selection
+          document.getElementById('metode-pembayaran').addEventListener('change', function() {
+              const metodePembayaran = this.value;
+              if (metodePembayaran === 'Transfer Bank BSI') {
+                  document.getElementById('virtual-account').classList.remove('hidden');
+                  document.getElementById('qris-barcode').classList.add('hidden');
+              } else if (metodePembayaran === 'QRIS') {
+                  document.getElementById('qris-barcode').classList.remove('hidden');
+                  document.getElementById('virtual-account').classList.add('hidden');
+              } else {
+                  document.getElementById('virtual-account').classList.add('hidden');
+                  document.getElementById('qris-barcode').classList.add('hidden');
+              }
+          });
+      </script>
+
+      </body>
+      </html>
+
+
+</body>
+</html>
