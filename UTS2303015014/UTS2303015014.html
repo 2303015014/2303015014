@@ -36,7 +36,7 @@
 
     .latihan-box {
       text-align: left;
-      background-color: #f4faff;
+      background-color: #f8fafc;
       border-left: 5px solid #0077aa;
       padding: 20px;
       border-radius: 10px;
@@ -71,6 +71,376 @@
 
     <div class="latihan-box">
       <!-- ISI LATIHAN DI SINI -->
-      <p>Jawaban UTS akan tampil disini jika sudah tersedia</p>
+      <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2ecec;
+    }
+
+    header, footer {
+      background-color: #cce1fb;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #62789f;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #a1cff7;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .roadmap-section {
+      background-color: #f4faff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #0077aa;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .roadmap-section h2 {
+      color: #0077aa;
+    }
+
+    .roadmap-section p {
+      margin: 10px 0;
+    }
+
+    .about-section img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .project-name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      background-color: #f4faff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #0077aa;
+      font-size: 16px;
+    }
+
+    .gallery-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      flex: 0 0 100%;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 150px;
+      background-color: #d3d3d3;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .project-name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .gallery-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+    }
+
+    .gallery-button-left {
+      left: 10px;
+    }
+
+    .gallery-button-right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>HEADER</div>
+    <div>LOGO</div>
+  </header>
+
+  <nav>
+    <button class="active" onclick="showPage('home')">Home</button>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('portfolio')">Portfolio</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="container" id="home" style="display: block;">
+    <h1>Motivasi Saya Berkuliah di Teknik Informatika</h1>
+    <p>Jurusan Teknik Informatika menawarkan berbagai peluang yang menarik dan berkembang pesat di dunia digital. Menjadi seorang ahli dalam bidang informatika memungkinkan Saya untuk menjadi bagian dari revolusi teknologi, mengembangkan solusi inovatif, dan bekerja di berbagai sektor yang semakin bergantung pada teknologi informasi. Keahlian dalam pemrograman, algoritma, kecerdasan buatan, serta kemampuan untuk menyelesaikan masalah teknis akan menjadi bekal utama dalam perjalanan karier Saya.</p>
+
+    <div class="roadmap-section">
+      <h2>Roadmap Karier Ninda di Teknik Informatika</h2>
+      <p><strong>1. Tahun Pertama:</strong> Fokus pada dasar-dasar komputer, pemrograman, dan matematika. Kuasai bahasa pemrograman dasar seperti Python, Java, atau C++. Belajar algoritma dasar dan struktur data yang akan menjadi pondasi bagi keterampilan teknis Saya.</p>
+      <p><strong>2. Tahun Kedua:</strong> Memperdalam pemahaman dalam sistem operasi, jaringan komputer, dan pengembangan perangkat lunak. Mulailah bekerja dengan proyek-proyek kecil untuk mengasah keterampilan praktis dalam pengembangan aplikasi.</p>
+      <p><strong>3. Tahun Ketiga:</strong> Fokus pada area spesialisasi seperti kecerdasan buatan, data besar (big data), dan keamanan siber. Ikuti kursus atau pelatihan untuk mempersiapkan karier di bidang tertentu, seperti pengembangan perangkat lunak atau data science.</p>
+      <p><strong>4. Tahun Keempat:</strong> Magang di perusahaan teknologi untuk mendapatkan pengalaman dunia nyata. Gunakan kesempatan ini untuk membangun jaringan profesional dan mendapatkan wawasan langsung tentang industri.</p>
+      <p><strong>5. Setelah Lulus:</strong> Cari pekerjaan di perusahaan-perusahaan teknologi besar atau startup. Terus belajar dan kembangkan keterampilan teknis Saya dengan mengikuti pelatihan lanjutan atau sertifikasi profesional untuk meningkatkan karier Saya.</p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="container" id="about" style="display: none;">
+    <h1>About Me</h1>
+    <div class="about-section">
+      <img src="WhatsApp Image 2025-03-13 at 18.19.15.jpeg" alt="Foto Pribadi">
+      <p><strong>Nama:</strong> Ninda Baitza Maulana</p>
+      <p><strong>NIM:</strong> 2303015014</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Pekalongan, 14 September 2003</p>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="container" id="portfolio" style="display: none;">
+    <h1>Portfolio Pengabdian Kepada Masyarakat</h1>
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="project-card">
+          <img src="IMG_3381.JPG" alt="Project 1" class="project-image">
+          <div class="project-name">Pemberian Materi</div>
+        </div>
+        <div class="project-card">
+          <img src="IMG_3406.JPG" alt="Project 2" class="project-image">
+          <div class="project-name">Penyerahan Plakat 1</div>
+        </div>
+        <div class="project-card">
+          <img src="IMG_3407.JPG" alt="Project 3" class="project-image">
+          <div class="project-name">Penyerahan Plakat 2</div>
+        </div>
+        <div class="project-card">
+          <img src="IMG_3409.JPG" alt="Project 4" class="project-image">
+          <div class="project-name">Foto Bersama 1</div>
+        </div>
+        <div class="project-card">
+          <img src="IMG_3412.JPG" alt="Project 5" class="project-image">
+          <div class="project-name">Foto Bersama 2</div>
+        </div>
+        <div class="project-card">
+          <img src="IMG_3419.JPG" alt="Project 6" class="project-image">
+          <div class="project-name">Foto Bersama 3</div>
+        </div>
+      </div>
+      <button class="gallery-button gallery-button-left" onclick="moveGallery(-1)">&#8249;</button>
+      <button class="gallery-button gallery-button-right" onclick="moveGallery(1)">&#8250;</button>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+<div class="container" id="contact" style="display: none;">
+  <h1>Contact Us</h1>
+  <p class="description">We'd love to get in touch and learn more about you. So, send us a message and we'll reply as fast as we can.</p>
+  <form class="contact-form">
+      <div class="form-group">
+          <label for="first-name">Your Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="First" class="form-input">
+      </div>
+      <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last" class="form-input">
+      </div>
+      <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Your E-mail" class="form-input">
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)" class="form-input">
+      </div>
+      <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Your message here..." class="form-textarea"></textarea>
+      </div>
+      <button type="submit" class="form-btn">SEND</button>
+  </form>
+</div>
+
+<!-- CSS -->
+<style>
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #e2effd;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-btn {
+  padding: 12px 20px;
+  background-color: #324591;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #a1bceb;
+}
+
+h1 {
+  font-size: 24px;
+  color: #0077aa;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+</style>
+
+
+  <footer>
+    Terima Kasih
+  </footer>
+
+  <script>
+    function showPage(page) {
+      // Menyembunyikan semua section
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('about').style.display = 'none';
+      document.getElementById('portfolio').style.display = 'none';
+      document.getElementById('contact').style.display = 'none';
+
+      // Menampilkan section yang dipilih
+      document.getElementById(page).style.display = 'block';
+
+      // Menambahkan class active pada tombol yang dipilih
+      const buttons = document.querySelectorAll('nav button');
+      buttons.forEach(button => button.classList.remove('active'));
+      document.querySelector(`button[onclick="showPage('${page}')"]`).classList.add('active');
+    }
+
+    let currentIndex = 0;
+
+    function moveGallery(direction) {
+      const gallery = document.querySelector('.gallery');
+      const items = document.querySelectorAll('.project-card');
+      const totalItems = items.length;
+
+      currentIndex = (currentIndex + direction + totalItems) % totalItems;
+      const newTransformValue = -currentIndex * (items[0].offsetWidth); // Moves by the width of one item
+      gallery.style.transform = `translateX(${newTransformValue}px)`;
+    }
+  </script>
+
+</body>
+</html>
+
 </body>
 </html>
